@@ -1,0 +1,109 @@
+.admin-contents .badges select {
+  color: #000000;
+}
+
+.admin-contents .badges select .emberview {
+  color: #000000;
+}
+
+.tek-bar {
+  background-color: #0F0F0F;
+}
+
+.tek-bar div {
+  width: 765px;
+  margin: auto auto;
+  text-align: center;
+}
+
+.tek-bar .tek-bar-link {
+  color: #FFFFFF;
+  line-height: 50px;
+  font-size: 1.45em;
+  font-family: 'Open Sans',sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #3f3f3f;
+  color: #dcdcdc;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-tag {
+  color: #e3ceab;
+}
+
+.hljs-template-tag {
+  color: #dcdcdc;
+}
+
+.hljs-number {
+  color: #8cd0d3;
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-attribute {
+  color: #efdcbc;
+}
+
+.hljs-literal {
+  color: #efefaf;
+}
+
+.hljs-subst {
+  color: #8f8f8f;
+}
+
+.hljs-title,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-section,
+.hljs-type {
+  color: #efef8f;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: #dca3a3;
+}
+
+.hljs-deletion,
+.hljs-string,
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #cc9393;
+}
+
+.hljs-addition,
+.hljs-comment,
+.hljs-quote,
+.hljs-meta {
+  color: #7f9f7f;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.lazyYT iframe {
+  width: 693px !important;
+  height: 390px !important;
+}
+
+.lazyYT-container, .lazyYT-video-loaded, .lazyYT-image-loaded {
+  width: 693px !important;
+  height: 120px !important;
+}
