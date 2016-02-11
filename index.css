@@ -2,11 +2,6 @@
   color: #000000;
 }
 
-.lazyYT-container, .lazyYT-video-loaded, .lazyYT-image-loaded {
-  width: 693px !important;
-  height: 120px !important;
-}
-
 h1 {
   font-size: 1.5rem;
 }
@@ -145,6 +140,11 @@ h6 {
 
 .hljs-strong {
   font-weight: bold;
+}
+
+.lazyYT-container, .lazyYT-video-loaded, .lazyYT-image-loaded {
+  width: 693px !important;
+  height: 120px !important;
 }
 
 .lazyYT iframe {

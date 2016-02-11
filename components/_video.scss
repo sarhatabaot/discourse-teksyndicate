@@ -1,8 +1,8 @@
-%lazyYT-size {
-    width: 693px !important;
-    height: 120px !important;
-}
 @mixin teksyndicate-video { 
+    %lazyYT-size {
+        width: 693px !important;
+        height: 120px !important;
+    }
     .lazyYT {
 
         iframe {
