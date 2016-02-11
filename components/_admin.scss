@@ -1,0 +1,16 @@
+%adminui-color {
+    color: $adminui-color; 
+}
+
+@mixin teksyndicate-adminui {
+.admin-contents {
+    .badges {
+        select {
+            @extend %adminui-color;
+            .emberview {
+                @extend %adminui-color;
+            }
+        }
+    }
+}
+};

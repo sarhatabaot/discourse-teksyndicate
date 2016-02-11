@@ -1,0 +1,25 @@
+%lazyYT-size {
+    width: 693px !important;
+    height: 120px !important;
+}
+@mixin teksyndicate-video { 
+    .lazyYT {
+
+        iframe {
+            width: 693px !important;
+            height: 390px !important;
+        }
+
+        &-container {
+            @extend %lazyYT-size;
+        }
+
+        &-video-loaded {
+            @extend %lazyYT-size;
+        }
+
+        &-image-loaded {
+            @extend %lazyYT-size;
+        }
+    }
+};

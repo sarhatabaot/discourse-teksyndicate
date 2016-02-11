@@ -1,0 +1,9 @@
+@mixin teksyndicate-typography-base {
+  @each $size, $headers in $header-sizes {
+      @each $header, $font-size in $headers {
+        #{$header} {
+          font-size: rem-calc($font-size);
+        }
+      }
+  }
+}
