@@ -9,14 +9,14 @@
         }
     }
      
-    .tek-bar {
-        &-link {
-            color: #FFFFFF;
-            line-height: 50px;
-            font-size: 1.45em;
-            font-family: $header-sans-serif;
-            padding-left: 10px;
-            padding-right: 10px;
+        .tek-bar {
+            &-link {
+                color: #FFFFFF;
+                line-height: 50px;
+                font-size: 1.45em;
+                font-family: $header-sans-serif;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
         }
-    }
 }
