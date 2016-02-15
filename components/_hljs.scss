@@ -1,5 +1,7 @@
+// TODO. Theme mixin
+//$theme-zenburn: map-get($hljs-theme-colors, 'zenburn');
+//$theme-grayscale: map-get($hljs-theme-colors, 'grayscale');
 @mixin teksyndicate-hljs {
-
   .hljs {
     display: block;
     overflow-x: auto;
@@ -12,34 +14,34 @@
   .hljs-keyword,
   .hljs-selector-tag,
   .hljs-tag {
-    color: #e3ceab;
+    color: $hljs-keyword;
   }
 
 
   .hljs-template-tag {
-    color: #dcdcdc;
+    color: $hljs-template-tag;
   }
 
 
   .hljs-number {
-    color: #8cd0d3;
+    color: $hljs-number;
   }
 
 
   .hljs-variable,
   .hljs-template-variable,
   .hljs-attribute {
-    color: #efdcbc;
+    color: $hljs-variable;
   }
 
 
   .hljs-literal {
-    color: #efefaf;
+    color: $hljs-literal;
   }
 
 
   .hljs-subst {
-    color: #8f8f8f;
+    color: $hljs-subst;
   }
 
 
@@ -49,14 +51,14 @@
   .hljs-selector-class,
   .hljs-section,
   .hljs-type {
-    color: #efef8f;
+    color: $hljs-title;
   }
 
 
   .hljs-symbol,
   .hljs-bullet,
   .hljs-link {
-    color: #dca3a3;
+    color: $hljs-symbol;
   }
 
 
@@ -64,7 +66,7 @@
   .hljs-string,
   .hljs-built_in,
   .hljs-builtin-name {
-    color: #cc9393;
+    color: $hljs-string;
   }
 
 
@@ -72,7 +74,7 @@
   .hljs-comment,
   .hljs-quote,
   .hljs-meta {
-    color: #7f9f7f;
+    color: $hljs-meta;
   }
 
 

@@ -1,0 +1,100 @@
+// TekSyndicate Website Settings
+// ------------------------------
+//
+// Table of Contents:
+//
+// 1. Base Typography
+// 2. Breakpoints
+// 3. Colors
+
+// 1. Base Typography
+// --------------------
+$header-sans-serif: 'Open Sans', sans-serif;
+$header-sizes: (
+  small: (
+    'h1': 24,
+    'h2': 20,
+    'h3': 19,
+    'h4': 18,
+    'h5': 17,
+    'h6': 16,
+  ),
+  medium: (
+    'h1': 48,
+    'h2': 40,
+    'h3': 31,
+    'h4': 25,
+    'h5': 20,
+    'h6': 16,
+  ),
+);
+$global-font-size: 100%;
+// 2. Breakpoints
+// ---------------------
+$breakpoints: (
+  small: 0,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);
+$breakpoint-classes: (small medium large);
+
+
+// 3. Colors
+// ------------------------
+$dark-gray:#303030;
+
+// 4. Highlight.js
+// ------------------------
+// TODO, attributes should not be variables, make function that adds
+// the prefix on its own.
+$hljs-theme-colors: (
+    'zenburn': (
+        'background':#3f3f3f,
+        'color': #dcdcdc,
+        'keyword': #e3ceab,
+        'template-tag': #dcdcdc, 
+        'number': #8cd0d3,
+        'variable': #efdcbc,
+        'literal': #efefaf,
+        'subst': #8f8f8f,
+        'title': #efef8f,
+        'symbol': #dca3a3,
+        'string': #cc9393,
+        'meta': #7f9f7f,
+        ),
+    'grayscale': (
+        'background':#fff,
+        'color': #333,
+        'keyword': #000,
+        'template-tag': #333, 
+        'number': #777,
+        'variable': #333,
+        'literal': #777,
+        'subst': #333,
+        'title': #000,
+        'symbol': #333,
+        'string': #333,
+        'meta': #777,
+        ),
+    );
+
+$forum-background: $dark-gray;
+// 5. Admin UI 
+// ------------------------
+
+$adminui-color: #000000;
+
+// 6. Header
+// ------------------------
+$tekbar-background: darken($forum-background,10%);
+$tekbar-line-height: 50px;
+$tekbar-color: white;
+$tekbar-font-size: 1.45em; //convert using rem-calc()
+$tekbar-padding: 10px;
+
+
+
+
+

@@ -1,8 +1,8 @@
 @import "util/util";
 
-@import "variables";
-@import "typography";
-@import "hljs";
+@import "settings/settings";
+@import "typography/typography";
+@import "components/hljs";
 @import "components/admin";
 @import "components/header";
 @import "components/video";
@@ -12,3 +12,4 @@
 @include teksyndicate-top-bar;
 @include teksyndicate-hljs;
 @include teksyndicate-video;
+ 

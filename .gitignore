@@ -41,5 +41,7 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Prepros
 *.cfg
-*.cfg
+
