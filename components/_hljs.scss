@@ -1,45 +1,45 @@
-@mixin teksyndicate-hljs {
-
+// TODO. Theme mixin
+@mixin teksyndicate-hljs ($theme){
   .hljs {
     display: block;
     overflow-x: auto;
     padding: 0.5em;
-    background: $hljs-background;
-    color: $hljs-color;
+    @include background-color('background-color', $theme);
+    @include color('color', $theme);
   }
 
 
   .hljs-keyword,
   .hljs-selector-tag,
   .hljs-tag {
-    color: #e3ceab;
+    @include color('keyword', $theme);
   }
 
 
   .hljs-template-tag {
-    color: #dcdcdc;
+    @include color('template-tag', $theme);
   }
 
 
   .hljs-number {
-    color: #8cd0d3;
+    @include color('number', $theme);
   }
 
 
   .hljs-variable,
   .hljs-template-variable,
   .hljs-attribute {
-    color: #efdcbc;
+    @include color('variable', $theme);
   }
 
 
   .hljs-literal {
-    color: #efefaf;
+    @include color('literal', $theme);
   }
 
 
   .hljs-subst {
-    color: #8f8f8f;
+    @include color('subst', $theme);
   }
 
 
@@ -49,14 +49,14 @@
   .hljs-selector-class,
   .hljs-section,
   .hljs-type {
-    color: #efef8f;
+    @include color('title', $theme);
   }
 
 
   .hljs-symbol,
   .hljs-bullet,
   .hljs-link {
-    color: #dca3a3;
+    @include color('symbol', $theme);
   }
 
 
@@ -64,7 +64,7 @@
   .hljs-string,
   .hljs-built_in,
   .hljs-builtin-name {
-    color: #cc9393;
+    @include color('string', $theme);
   }
 
 
@@ -72,7 +72,7 @@
   .hljs-comment,
   .hljs-quote,
   .hljs-meta {
-    color: #7f9f7f;
+    @include color('meta',$theme);
   }
 
 
