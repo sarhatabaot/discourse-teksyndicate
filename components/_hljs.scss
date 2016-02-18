@@ -1,47 +1,45 @@
 // TODO. Theme mixin
-//$theme-zenburn: map-get($hljs-theme-colors, 'zenburn');
-//$theme-grayscale: map-get($hljs-theme-colors, 'grayscale');
-@mixin teksyndicate-hljs {
+@mixin teksyndicate-hljs ($theme){
   .hljs {
     display: block;
     overflow-x: auto;
     padding: 0.5em;
-    background: $hljs-background;
-    color: $hljs-color;
+    @include background-color('background-color', $theme);
+    @include color('color', $theme);
   }
 
 
   .hljs-keyword,
   .hljs-selector-tag,
   .hljs-tag {
-    color: $hljs-keyword;
+    @include color('keyword', $theme);
   }
 
 
   .hljs-template-tag {
-    color: $hljs-template-tag;
+    @include color('template-tag', $theme);
   }
 
 
   .hljs-number {
-    color: $hljs-number;
+    @include color('number', $theme);
   }
 
 
   .hljs-variable,
   .hljs-template-variable,
   .hljs-attribute {
-    color: $hljs-variable;
+    @include color('variable', $theme);
   }
 
 
   .hljs-literal {
-    color: $hljs-literal;
+    @include color('literal', $theme);
   }
 
 
   .hljs-subst {
-    color: $hljs-subst;
+    @include color('subst', $theme);
   }
 
 
@@ -51,14 +49,14 @@
   .hljs-selector-class,
   .hljs-section,
   .hljs-type {
-    color: $hljs-title;
+    @include color('title', $theme);
   }
 
 
   .hljs-symbol,
   .hljs-bullet,
   .hljs-link {
-    color: $hljs-symbol;
+    @include color('symbol', $theme);
   }
 
 
@@ -66,7 +64,7 @@
   .hljs-string,
   .hljs-built_in,
   .hljs-builtin-name {
-    color: $hljs-string;
+    @include color('string', $theme);
   }
 
 
@@ -74,7 +72,7 @@
   .hljs-comment,
   .hljs-quote,
   .hljs-meta {
-    color: $hljs-meta;
+    @include color('meta',$theme);
   }
 
 

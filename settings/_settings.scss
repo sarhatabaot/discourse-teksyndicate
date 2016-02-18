@@ -51,7 +51,7 @@ $dark-gray:#303030;
 // the prefix on its own.
 $hljs-theme-colors: (
     'zenburn': (
-        'background':#3f3f3f,
+        'background-color':#3f3f3f,
         'color': #dcdcdc,
         'keyword': #e3ceab,
         'template-tag': #dcdcdc, 
@@ -65,7 +65,7 @@ $hljs-theme-colors: (
         'meta': #7f9f7f,
         ),
     'grayscale': (
-        'background':#fff,
+        'background-color':#fff,
         'color': #333,
         'keyword': #000,
         'template-tag': #333, 
@@ -79,7 +79,8 @@ $hljs-theme-colors: (
         'meta': #777,
         ),
     );
-
+$theme-zenburn: map-get($hljs-theme-colors, 'zenburn');
+$theme-grayscale: map-get($hljs-theme-colors, 'grayscale');
 $forum-background: $dark-gray;
 // 5. Admin UI 
 // ------------------------

@@ -10,6 +10,6 @@
 @include teksyndicate-typography-base;
 @include teksyndicate-adminui;
 @include teksyndicate-top-bar;
-@include teksyndicate-hljs;
+@include teksyndicate-hljs($theme-zenburn);
 @include teksyndicate-video;
  
