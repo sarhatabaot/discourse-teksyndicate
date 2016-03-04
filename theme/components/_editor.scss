@@ -1,0 +1,67 @@
+@mixin editor {
+    body .grippie {
+        border-top: 1px solid $light-gray;
+        background: url(/assets/grippie-d28a6f65e22c0033dcf0d63883bcc590.png) $light-gray no-repeat center 3px;
+    }
+    #reply-control {
+        transition: height 0.35s ease-in-out; 
+        background-color: $gray;
+        
+        .d-editor {
+            border: 1px solid $gray;
+        }
+        .contents {
+            .d-editor-preview{
+                border: 1px dashed $gray;
+            }
+        }
+
+        .wmd-control {
+            .d-editor-input{
+                background-color: $dark-gray;
+            }
+            .d-editor-preview{
+                @extend .d-editor-input;
+            }
+        }
+
+        .d-editor-button-bar {
+            @extend .d-editor-input;
+            border-bottom: 2px solid $light-gray;
+        }
+    }
+    #reply-control .wmd-controls .d-editor-input, #reply-control .wmd-controls .d-editor-preview, #reply-control .d-editor-button-bar {
+        background-color: $dark-gray;
+    }
+
+    body input[type="text"], body input[type="password"], body input[type="datetime"], body input[type="datetime-local"], body input[type="date"], body input[type="month"], body input[type="time"], body input[type="week"], body input[type="number"], body input[type="email"], body input[type="url"], body input[type="search"], body input[type="tel"], body input[type="color"] {
+        background-color: $gray;
+        border: 1px solid hsl(0,0%,35%);
+        border-radius: 3px;
+        box-shadow: inset 0 2px 2px rgba(0,0,0,0.3);
+    }
+    body input[type="text"]:focus, body input[type="password"]:focus, body input[type="datetime"]:focus, body input[type="datetime-local"]:focus, body input[type="date"]:focus, body input[type="month"]:focus, body input[type="time"]:focus, body input[type="week"]:focus, body input[type="number"]:focus, body input[type="email"]:focus, body input[type="url"]:focus, body input[type="search"]:focus, body input[type="tel"]:focus, body input[type="color"]:focus {
+        border-color: hsl(0,0%,40%);
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,0.3),0 0 8px hsl(0,0%,50%);
+    }
+
+    .select2-container{
+        border: 1px solid hsl(0,0%,50%);
+
+        .select2-choice {
+            border: 1px solid hsl(0,0%,50%);
+        }
+        .select-container-active,  {
+            @extend .select2-choice;
+            box-shadow: hsl(0,0%,50%) 0px 0px 6px 0px;
+        }
+    }
+    .select2-dropdown-open a.select2-choice {
+        @extend .select2-choice;
+    }
+    .select-drop-active {
+        border: 1px solid hsl(0,0%,50%);
+        border-top: 0;
+    }
+}

@@ -1,0 +1,153 @@
+// TekSyndicate Website Settings
+// ------------------------------
+//
+// Table of Contents:
+//
+// 1. Base Typography
+// 2. Breakpoints
+// 3. Colors
+
+// 1. Base Typography
+// --------------------
+$header-sans-serif: 'Open Sans', sans-serif;
+$header-sizes: (
+  small: (
+    'h1': 24,
+    'h2': 20,
+    'h3': 19,
+    'h4': 18,
+    'h5': 17,
+    'h6': 16,
+  ),
+ medium: (
+    'h1': 48,
+    'h2': 40,
+    'h3': 31,
+    'h4': 25,
+    'h5': 20,
+    'h6': 16,
+  ),
+);
+$header-size-small: map-get($header-sizes,'small');
+$header-size-medium: map-get($header-sizes,'medium');
+$global-font-size: 100%;
+// 2. Breakpoints
+// ---------------------
+$breakpoints: (
+  'small': 0,
+  'medium': 640px,
+  'large': 1024px,
+  'xlarge': 1200px,
+  'xxlarge': 1440px,
+);
+$breakpoint-classes: (small medium large);
+
+
+// 3. Colors
+// ------------------------
+$dark-gray: hsl(0,0%,19%);
+$forum-background: $dark-gray;
+// 4. Highlight.js
+// ------------------------
+// Themes: 
+//   * Zenburn: 
+//   * Grayscale:
+//   * base16-tomorrow-dark:
+//   * northem-dark:
+//   * one-dark:
+$hljs-theme-colors: (
+    'zenburn': (
+        'background-color': hsl(0,0%,25%),
+        'color': hsl(0,0%,86%),
+        'keyword': hsl(38,50%,78%),
+        'template-tag': hsl(0,0%,86%), 
+        'number': hsl(183,45%,69%),
+        'variable': hsl(38,61%,84%),
+        'literal': hsl(60,67%,81%),
+        'subst': hsl(0,0%,56%),
+        'title': hsl(60,75%,75%),
+        'symbol': hsl(0,45%,75%),
+        'string': hsl(0,36%,69%),
+        'meta': hsl(120,14%,56%),
+        ),
+    'grayscale': (
+        'background-color': hsl(0,0%,100%),
+        'color': hsl(0,0%,20%),
+        'keyword': hsl(0,0%,0%),
+        'template-tag': hsl(0,0%,20%), 
+        'number': hsl(0,0%,47%),
+        'variable': hsl(0,0%,20%),
+        'literal': hsl(0,0%,47%),
+        'subst': hsl(0,0%,20%),
+        'title': hsl(0,0%,0%),
+        'symbol': hsl(0,0%,20%),
+        'string': hsl(0,0%,20%),
+        'meta': hsl(0,0%,47%),
+        ),
+    'base16-tomorrow-dark': (
+        'background-color': hsl(0,0%,100%),
+        'color': hsl(0,0%,20%),
+        'keyword': hsl(0,0%,0%),
+        'template-tag': hsl(0,0%,20%), 
+        'number': hsl(0,0%,47%),
+        'variable': hsl(0,0%,20%),
+        'literal': hsl(0,0%,47%),
+        'subst': hsl(0,0%,20%),
+        'title': hsl(0,0%,0%),
+        'symbol': hsl(0,0%,20%),
+        'string': hsl(0,0%,20%),
+        'meta': hsl(0,0%,47%),
+        ),
+    'northem-dark': (
+        'background-color': hsl(0,0%,100%),
+        'color': hsl(0,0%,20%),
+        'keyword': hsl(0,0%,0%),
+        'template-tag': hsl(0,0%,20%), 
+        'number': hsl(0,0%,47%),
+        'variable': hsl(0,0%,20%),
+        'literal': hsl(0,0%,47%),
+        'subst': hsl(0,0%,20%),
+        'title': hsl(0,0%,0%),
+        'symbol': hsl(0,0%,20%),
+        'string': hsl(0,0%,20%),
+        'meta': hsl(0,0%,47%),
+        ),
+    'one-dark': (
+        'background-color': hsl(0,0%,100%),
+        'color': hsl(0,0%,20%),
+        'keyword': hsl(0,0%,0%),
+        'template-tag': hsl(0,0%,20%), 
+        'number': hsl(0,0%,47%),
+        'variable': hsl(0,0%,20%),
+        'literal': hsl(0,0%,47%),
+        'subst': hsl(0,0%,20%),
+        'title': hsl(0,0%,0%),
+        'symbol': hsl(0,0%,20%),
+        'string': hsl(0,0%,20%),
+        'meta': hsl(0,0%,47%),
+        ),
+    );
+// These should be in a map
+$theme-zenburn: map-get($hljs-theme-colors, 'zenburn');
+$theme-grayscale: map-get($hljs-theme-colors, 'grayscale');
+$theme-base16-tomorrow-dark: map-get($hljs-theme-colors, 'base16-tomorrow-dark');
+$theme-northem-dark: map-get($hljs-theme-colors, 'northem-dark');
+$theme-one-dark: map-get($hljs-theme-colors, 'one-dark');
+
+// 5. Admin UI 
+// ------------------------
+
+$adminui-color: #000000;
+
+// 6. Header
+// ------------------------
+$tekbar-background: darken($forum-background,10%);
+$tekbar-line-height: 50px;
+$tekbar-color: white;
+$tekbar-font-size: 1.45em; //convert using rem-calc()
+$tekbar-padding: 10px;
+
+
+
+
+

@@ -1,0 +1,73 @@
+$headers: (
+    'h1': 48,
+    'h2': 40,
+    'h3': 31,
+    'h4': 25,
+    'h5': 20,
+    'h6': 16,
+);
+$code-stack: Consolas, 'Courier New', Courier, monospace;
+
+// BRAND COLORS
+// DARK THEME
+$theme-colors: (
+    'dark': (
+        'dark-gray': hsl(0,0%,5%),
+        'gray': hsl(0,0%,10%),
+        'light-gray': hsl(0,0%,15%),
+        'lighter-gray': hsl(0,0%,95%),
+        'alert': hsl(210,15%,15%),
+        ),
+    'light': (
+        'alert': hsl(217,51%,69%),
+        ),
+    );
+// # Temp apply colors via map-get
+$dark-gray:hsl(0,0%,5%);
+$gray:hsl(0,0%,10%);
+$light-gray:hsl(0,0%,15%);
+$lighter-gray: hsl(0,0%,95%);
+// LIGHT THEME
+
+$theme-dark: map-get($theme-colors,'dark');
+$theme-light: map-get($theme-colors, 'light');
+// PADDINGS
+$padding-tb: 18px;
+$padding-lr: 10px;
+
+// BADGE
+$badge-width: 5px;
+
+// HLJS
+$hljs-theme-colors: (
+    'zenburn': (
+        'background-color': hsl(0,0%,25%),
+        'color': hsl(0,0%,86%),
+        'keyword': hsl(38,50%,78%),
+        'template-tag': hsl(0,0%,86%), 
+        'number': hsl(183,45%,69%),
+        'variable': hsl(38,61%,84%),
+        'literal': hsl(60,67%,81%),
+        'subst': hsl(0,0%,56%),
+        'title': hsl(60,75%,75%),
+        'symbol': hsl(0,45%,75%),
+        'string': hsl(0,36%,69%),
+        'meta': hsl(120,14%,56%),
+        ),
+    'github': (
+        'background-color': hsl(0,0%,25%),
+        'color': hsl(0,0%,86%),
+        'keyword': hsl(38,50%,78%),
+        'template-tag': hsl(0,0%,86%), 
+        'number': hsl(183,45%,69%),
+        'variable': hsl(38,61%,84%),
+        'literal': hsl(60,67%,81%),
+        'subst': hsl(0,0%,56%),
+        'title': hsl(60,75%,75%),
+        'symbol': hsl(0,45%,75%),
+        'string': hsl(0,36%,69%),
+        'meta': hsl(120,14%,56%),
+        ),
+        );
+$theme-zenburn: map-get($hljs-theme-colors, 'zenburn');
+$theme-github: map-get($hljs-theme-colors, 'github');

@@ -1,0 +1,36 @@
+@import "base";
+@import "scrollbar";
+@import "hljs";
+@import "badge";
+@import "header";
+@import "editor";
+@import "alert";
+@import "menu";
+@import "image-overlay";
+
+
+// Not exactly modular, but works for now
+@mixin components-all($theme-color) {
+    @include base;
+    @include scrollbar;
+    @include header;
+    @include editor;
+    @include badge;
+    @if $theme-color == 'light' {
+        @include alert($theme-light);
+    }
+    @if $theme-color == 'dark' {
+        @include alert($theme-dark);
+    }
+    @include menu;
+    @include image-overlay;
+    @if $theme-color == 'dark' {
+        @include hljs($theme-zenburn);
+    }
+    @if $theme-color == 'light' {
+        @include hlks($theme-github);
+    }
+}
+
+
+

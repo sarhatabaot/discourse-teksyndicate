@@ -1,0 +1,10 @@
+@mixin alert($theme) {
+    .alert.alert-info {
+        @if $theme == $theme-dark {
+            @include background-color('alert', $theme);
+        }
+        @if $theme == $theme-light {
+            @include background-color('alert', $theme);
+        }
+    }
+}

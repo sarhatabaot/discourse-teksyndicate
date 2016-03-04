@@ -7,7 +7,7 @@
 @import "components/header";
 @import "components/video";
 
-@include teksyndicate-typography-base;
+@include teksyndicate-typography-base($header-size-medium);
 @include teksyndicate-adminui;
 @include teksyndicate-top-bar;
 @include teksyndicate-hljs($theme-zenburn);
