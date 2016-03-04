@@ -1,0 +1,49 @@
+/// Browser Prefix Mixin
+/// @access ppublic
+/// @author Omer Oreg
+/// @param {string} $attribute - attribute to prefix
+/// @param {string} $value - value of attribute
+@mixin prefix($attribute, $value) {
+    -webkit-#{$attribute}: #{$value};
+    -moz-#{$attribute}: #{$value};
+    -ms-#{$attribute}: #{$value};
+    #{$attribute}: #{$value};
+}
+
+/// Headers Mixin
+/// @access public
+/// @param {Map} $headers - Map of the headings to use
+@mixin typography-base($headers) {
+      @each $header, $font-size in $headers {
+        #{$header} {
+          font-size: rem-calc($font-size);
+        }
+  }
+}
+
+/// Direction Left Mixin
+/// @access public
+@mixin dir-left {
+        text-align: left;
+        direction: ltr;
+    }
+
+/// Border Left Right Mixin
+/// @access private
+/// @param {string} $width
+/// @param {string} $style
+/// @param {string} $color
+@mixin border-left-right($width, $style, $color) {
+    border-left: #{$width} #{$style} #{color};
+    border-right: #{$width} #{$style} #{color};
+}
+
+/// Shorthand to `border-left-right` Mixin
+/// @access public
+/// @see {mixin} border-left-right
+@mixin border-lr($width, $style, $color) {
+  @include border-left-right($width, $style, $color);
+}
+
+
+

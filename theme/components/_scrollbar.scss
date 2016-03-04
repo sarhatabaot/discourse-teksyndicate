@@ -1,0 +1,16 @@
+// #private $white: hsl(0,0%,90%);
+@mixin scrollbar {
+    $private-white: hsl(0,0%,90%);
+    html {
+        &::-webkit-scrollbar-thumb {
+            width: 8px;
+            background-color: hsl(0,0%,80%);
+        }
+        &::-webkit-scrollbar-track {
+            width: 8px;
+            background-color: $private-white;
+            opacity: 0.1;
+            @include border-lr(2px, solid, $private-white);
+        }
+    }
+}

@@ -1,0 +1,5 @@
+@mixin image-overlay {
+    .lightbox-wrapper .meta { 
+        background-color: $gray;
+    }
+}

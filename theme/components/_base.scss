@@ -1,0 +1,54 @@
+@mixin base {
+    html {
+        background-color: $dark-gray !important;
+    }
+    .topic-list > tbody > tr {
+        @extend html;
+    }
+
+    body > div:first-child {
+        padding:0 !important;
+    }
+    .topic-area {
+        @extend html;
+    }
+    #post_1 {
+        .topic-body {
+            border-top: none;
+        }  
+        .topic-avatar {
+            @extend .topic-body;
+        }
+    }
+
+    .topic-list .avatar.latest:not(.single) {
+        box-shadow: 0 0 4px 1px hsl(0, 0%, 81%);
+    }
+
+    .user-right .item.notification {
+        background-color: $dark-gray !important; 
+    }
+
+    #main-outlet .container {
+        background: none;
+    }
+
+    .topic-list th, .topic-list td {
+        padding: $padding-tb $padding-lr;
+    }
+    .show-more.has-topics {
+        top: 2px;
+    }
+
+    .topic-list>tbody>tr:first-of-type, .topic-list>tbody>tr {
+        border-top:none;
+        border-bottom:none;
+    }
+    .topic-map {
+        background-color: $dark-gray !important;
+        border:none;
+    }
+    .topic-map section {
+        border-top:none;
+    }
+}

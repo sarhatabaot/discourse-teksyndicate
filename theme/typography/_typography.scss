@@ -1,0 +1,9 @@
+@mixin typography($headers) {
+    @include typography-base($headers);
+    #suggested-topics h3 {
+        @extend h5;
+    }
+    .title-wrapper h1 .topic-link{
+        color: $lighter-gray !important;
+    }
+}

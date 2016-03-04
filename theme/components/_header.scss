@@ -1,0 +1,9 @@
+@mixin header {
+    .docked {
+        .d-header {
+            background-color: $gray !important;    
+            border-top: none;
+            border-bottom: 2px solid $light-gray;
+        }
+    }
+}
