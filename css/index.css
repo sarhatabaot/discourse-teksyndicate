@@ -1,0 +1,129 @@
+.admin-contents .badges select, .admin-contents .badges select .emberview {
+  color: #000000;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.9375rem;
+}
+
+h4 {
+  font-size: 1.5625rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.tek-bar {
+  background-color: #0F0F0F;
+}
+
+.tek-bar div {
+  width: 765px;
+  margin: auto auto;
+  text-align: center;
+}
+
+.tek-bar .tek-bar-link {
+  color: #FFFFFF;
+  line-height: 50px;
+  font-size: 1.45em;
+  font-family: "Open Sans", sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background-color: #404040;
+  color: #dbdbdb;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-tag {
+  color: #e3ceab;
+}
+
+.hljs-template-tag {
+  color: #dbdbdb;
+}
+
+.hljs-number {
+  color: #8cd0d4;
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-attribute {
+  color: #efddbd;
+}
+
+.hljs-literal {
+  color: #efefae;
+}
+
+.hljs-subst {
+  color: #8f8f8f;
+}
+
+.hljs-title,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-section,
+.hljs-type {
+  color: #efef8f;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: #dca3a3;
+}
+
+.hljs-deletion,
+.hljs-string,
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #cc9393;
+}
+
+.hljs-addition,
+.hljs-comment,
+.hljs-quote,
+.hljs-meta {
+  color: #7f9f7f;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.lazyYT-container, .lazyYT-video-loaded, .lazyYT-image-loaded {
+  width: 693px !important;
+  height: 120px !important;
+}
+
+.lazyYT iframe {
+  width: 693px !important;
+  height: 390px !important;
+}

@@ -1,5 +1,6 @@
-// TODO. Theme mixin
+
 @mixin teksyndicate-hljs ($theme){
+  pre code[class*=lang] {}
   .hljs {
     display: block;
     overflow-x: auto;

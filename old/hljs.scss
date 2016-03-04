@@ -1,0 +1,12 @@
+@import "css/util/util";
+
+@import "css/settings/settings";
+@import "css/typography/typography";
+@import "css/components/hljs";
+
+/* # Theme Zenburn # */
+@include teksyndicate-hljs($theme-zenburn);
+/* # Theme Grayscale # */
+@include teksyndicate-hljs($theme-grayscale);
+/* # Theme Base16-Tomorrow-Dark # */
+@include teksyndicate-hljs($theme-base16-tomorrow-dark);

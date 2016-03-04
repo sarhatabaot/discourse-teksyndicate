@@ -41,11 +41,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-<<<<<<< HEAD
 
 # Prepros
 *.cfg
 
-=======
-*.cfg
->>>>>>> refs/heads/master
+prepros.cfg
