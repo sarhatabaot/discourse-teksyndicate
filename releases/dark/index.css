@@ -1,37 +1,5 @@
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 1.9375rem;
-}
-
-h4 {
-  font-size: 1.5625rem;
-}
-
-h5, #suggested-topics h3 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
-
-.title-wrapper h1 .topic-link {
-  color: #f2f2f2 !important;
-}
-
-html {
-  background-color: white !important;
-}
-
-.topic-list > tbody > tr, .topic-area {
-  background-color: white !important;
+html, .topic-list > tbody > tr, .topic-area {
+  background-color: #0d0d0d !important;
 }
 
 body > div:first-child {
@@ -76,24 +44,23 @@ body > div:first-child {
   border-top: none;
 }
 
-html::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar-thumb, .topic-list > tbody > tr::-webkit-scrollbar-thumb, .topic-area::-webkit-scrollbar-thumb {
   width: 8px;
   background-color: #cccccc;
 }
 
-html::-webkit-scrollbar-track {
+html::-webkit-scrollbar-track, .topic-list > tbody > tr::-webkit-scrollbar-track, .topic-area::-webkit-scrollbar-track {
   width: 8px;
   background-color: #e6e6e6;
   opacity: 0.1;
-  border-left: 2px solid #e6e6e6;
-  border-right: 2px solid #e6e6e6;
+  border-left: 2px solid color;
+  border-right: 2px solid color;
 }
 
-.d-header {
+.docked .d-header {
+  background-color: #1a1a1a !important;
   border-top: none;
-  border-bottom: 2px solid;
-  background-color: white !important;
-  border-color: #f2f2f2;
+  border-bottom: 2px solid #262626;
 }
 
 body .grippie {
@@ -161,16 +128,12 @@ body input[type="text"]:focus, body input[type="password"]:focus, body input[typ
 }
 
 .alert.alert-info {
-  background-color: #88a7d8;
+  background-color: #21262c;
 }
 
 .menu-panel {
   background-color: #1a1a1a;
   border: 1px solid #404040;
-}
-
-.nav .nav-pills {
-  color: #0d0d0d;
 }
 
 .lightbox-wrapper .meta {
@@ -207,7 +170,7 @@ pre[class*=lang-] {
   border-radius: .3em;
 }
 
-.hljs, pre code {
+.hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;

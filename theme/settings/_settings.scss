@@ -19,6 +19,11 @@ $theme-colors: (
         'alert': hsl(210,15%,15%),
         ),
     'light': (
+        'dark-gray': hsl(0,0%,5%),
+        'gray': hsl(0,0%,10%),
+        'light-gray': hsl(0,0%,15%),
+        'lighter-gray': hsl(0,0%,95%),
+        'white': hsl(0,0%,100%),
         'alert': hsl(217,51%,69%),
         ),
     );

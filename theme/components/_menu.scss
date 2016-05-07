@@ -3,4 +3,7 @@
         background-color: $gray;
         border: 1px solid hsl(0,0%,25%);
     }
+    .nav .nav-pills {
+        color: map-get($theme-light,'dark-gray');
+    }
 }

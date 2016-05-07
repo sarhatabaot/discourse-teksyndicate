@@ -1,6 +1,6 @@
 // #private $white: hsl(0,0%,90%);
-@mixin scrollbar {
-    $private-white: hsl(0,0%,90%);
+// Dark is the default on the website, this is the only override
+@mixin scrollbar($theme-color: 'light') {
     html {
         &::-webkit-scrollbar-thumb {
             width: 8px;
@@ -8,9 +8,10 @@
         }
         &::-webkit-scrollbar-track {
             width: 8px;
-            background-color: $private-white;
+            background-color: hsl(0,0%,90%);
             opacity: 0.1;
-            @include border-lr(2px, solid, $private-white);
+            border-left: 2px solid hsl(0,0%,90%);
+            border-right: 2px solid hsl(0,0%,90%);
         }
     }
 }

@@ -1,17 +1,42 @@
-@mixin base {
-    html {
-        background-color: $dark-gray !important;
+@mixin base($theme-color) {
+    @if $theme-color == 'dark' {
+        html {
+            @include background-color('dark-gray', $theme-dark, $i: " !important");
+        }
+        %html {
+            @include background-color('dark-gray', $theme-dark, $i: " !important")
+        }
+
+        .topic-list > tbody > tr {
+            @extend %html;
+        }
+
+        .topic-area {
+            @extend %html;
+        }
     }
-    .topic-list > tbody > tr {
-        @extend html;
+    @if $theme-color == 'light' {
+        html {
+            @include background-color('white', $theme-light, $i: " !important");
+        }
+        %html {
+            @include background-color('white', $theme-light, $i: " !important")
+        }
+
+        .topic-list > tbody > tr {
+            @extend %html;
+        }
+
+        .topic-area {
+            @extend %html;
+        }
     }
+    
 
     body > div:first-child {
         padding:0 !important;
     }
-    .topic-area {
-        @extend html;
-    }
+    
     #post_1 {
         .topic-body {
             border-top: none;

@@ -1,0 +1,5 @@
+@import "user";
+
+@mixin modules($theme) {
+    @include user;
+}

@@ -24,13 +24,14 @@
         padding: .1em;
         border-radius: .3em;
     }
-    .hljs {
+    .hljs, pre code {
         display: block;
         overflow-x: auto;
         padding: 0.5em;
         @include background-color('background-color', $theme);
         @include color('color', $theme);
     }
+
     .hljs-keyword,
     .hljs-selector-tag,
     .hljs-tag {

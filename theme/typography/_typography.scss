@@ -1,9 +1,18 @@
-@mixin typography($headers) {
+@mixin typography($headers, $theme: 'dark') {
     @include typography-base($headers);
     #suggested-topics h3 {
         @extend h5;
     }
-    .title-wrapper h1 .topic-link{
-        color: $lighter-gray !important;
+    @if $theme == 'dark' {
+        .title-wrapper h1 .topic-link{
+            // space should be added within the mixin, not the input
+            @include color('lighter-gray', $theme-dark, $i: " !important");
+        }
+    }
+    @if $theme == 'light' {
+        .title-wrapper h1 .topic-link {
+            @include color('lighter-gray', $theme-light, $i: " !important");
+        }
     }
 }
+ 

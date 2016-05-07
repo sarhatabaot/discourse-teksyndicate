@@ -4,14 +4,14 @@
 /// @param {String} $property - Property to themify
 /// @param {String} $key - Key color to use from theme
 /// @param {Map} $themes [$themes] - Map of themes to use
-@mixin themify($property, $key, $themes) {
+@mixin themify($property, $key, $themes, $i: "") {
   // Iterate over the themes
   //@each $theme, $colors in $themes {
     // Create a selector (e.g. `.media.theme-unicorn, .theme-unicorn .media`)
     //&.theme-#{$theme},
     //.theme-#{$theme} & {
       // Output the declaration
-      #{$property}: map-get($themes, $key);
+      #{$property}: map-get($themes, $key)+#{$i};
     //}
   //}
 }
@@ -19,20 +19,20 @@
 // Shorthand to themify color through `themify` mixin
 /// @access public
 /// @see {mixin} themify
-@mixin color($key, $theme-map) {
-  @include themify('color', $key, $theme-map);
+@mixin color($key, $theme-map, $i: "") {
+  @include themify('color', $key, $theme-map, #{$i});
 }
 
 /// Shorthand to themify border-color through `themify` mixin
 /// @access public
 /// @see {mixin} themify
-@mixin border-color($key, $theme-map) {
-  @include themify('border-color', $key, $theme-map);
+@mixin border-color($key, $theme-map, $i: "") {
+  @include themify('border-color', $key, $theme-map, #{$i});
 }
 
 /// Shorthand to themify background-color through `themify` mixin
 /// @access public
 /// @see {mixin} themify
-@mixin background-color($key, $theme-map) {
-  @include themify('background-color', $key, $theme-map);
+@mixin background-color($key, $theme-map, $i: "") {
+  @include themify('background-color', $key, $theme-map, #{$i});
 }
