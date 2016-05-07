@@ -1,9 +1,14 @@
-@mixin header {
-    .docked {
+@mixin header($theme-color) {
         .d-header {
-            background-color: $gray !important;    
             border-top: none;
-            border-bottom: 2px solid $light-gray;
+            border-bottom: 2px solid;
+            @if $theme-color == 'dark' {
+                @include background-color('gray', $theme-dark, " !important");
+                @include border-color('light-gray', $theme-dark);
+            }
+            @if $theme-color == 'light' {
+                @include background-color('white', $theme-light, " !important");
+                @include border-color('lighter-gray', $theme-light);
+            }
         }
-    }
 }

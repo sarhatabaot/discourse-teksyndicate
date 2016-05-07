@@ -1,0 +1,24 @@
+@mixin activity($theme-map) {
+
+}
+@mixin notifications($theme-map) {
+
+}
+@mixin messages($theme-map) {
+
+}
+@mixin badges($theme-map) {
+
+}
+@mixin summary($theme-map) {
+
+}
+@mixin preferences($theme-map) {
+
+}
+
+@mixin user($theme-map){
+    @include activity;
+    @include notifications;
+
+}

@@ -7,28 +7,25 @@
 @import "alert";
 @import "menu";
 @import "image-overlay";
+@import "polls";
 
 
 // Not exactly modular, but works for now
 @mixin components-all($theme-color) {
-    @include base;
-    @include scrollbar;
-    @include header;
+    @include base($theme-color);
+    @include scrollbar($theme-color);
+    @include header($theme-color);
     @include editor;
     @include badge;
-    @if $theme-color == 'light' {
-        @include alert($theme-light);
-    }
-    @if $theme-color == 'dark' {
-        @include alert($theme-dark);
-    }
+    @include alert($theme-color);
     @include menu;
     @include image-overlay;
+    @include polls;
     @if $theme-color == 'dark' {
         @include hljs($theme-zenburn);
     }
     @if $theme-color == 'light' {
-        @include hlks($theme-github);
+        @include hljs($theme-github);
     }
 }
 
